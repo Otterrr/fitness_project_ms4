@@ -1,0 +1,40 @@
+<ul>
+    <li class="list-inline-item dropdown rounded-0">
+        {% if request.user.is_authenticated %}
+            <a class=" text-white nav-link border border-white rounded-0 d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="text-center">
+                    <p class="my-0">ACCOUNT</p>
+                </div>
+            </a>
+            <div class="dropdown-menu border-0 rounded-0" aria-labelledby="user-options">
+                {% if request.user.is_superuser %}
+                    <a href="" class="dropdown-item">PRODUCT MANAGEMENT</a>
+                {% endif %}
+                    <a href="" class="dropdown-item">PROFILE</a>
+                    <a href="{% url 'account_logout' %}" class="dropdown-item">LOGOUT</a>
+            </div>                          
+    </li>
+    <li class="list-inline-item">
+        <a class="{% if grand_total %}text-info font-weight-bold{% else %} text-white{% endif %} border border-white rounded-0 nav-link d-lg-none" href="">
+            <div class="text-center">
+                <p class="my-0">
+                    {% if grand_total %}
+                        ${{ grand_total|floatformat:2 }}
+                    {% else %}
+                        $0.00
+                    {% endif %}
+                </p>
+            </div>
+        </a>
+    </li>
+        {% else %}
+    <li class="list-inline-item">
+        <a class=" text-white border border-white rounded-0 nav-link d-lg-none" href="{% url 'account_signup' %}">REGISTER</a>
+            <div class="text-center"></div>
+        </a>
+    </li>
+    <li class="list-inline-item">
+        <a class=" text-white border border-white rounded-0 nav-link ml-1 d-lg-none" href="{% url 'account_login' %}">LOGIN</a>
+    </li>
+        {% endif %}
+</ul>

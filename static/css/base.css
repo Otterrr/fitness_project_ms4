@@ -10,6 +10,8 @@ body {
     font-family: 'Maven Pro', sans-serif;
 }
 
+/* Headings and menus */
+
 .message-container {
     height: 35vh;
 }
@@ -23,6 +25,13 @@ body {
     color: rgb(255, 255, 255);
 }
 
+.btn-white {
+    background-color: white;
+}
+
+.search-menu {
+    background-color: rgb(0,0,0,0.5);
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -68,6 +77,8 @@ body {
     border: 1px solid black !important;
 }
 
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -98,5 +109,35 @@ body {
     }
     .navbar {
         background-color: rgb(0,9,11,0.5)!important;
+    }
+}
+
+.account-icon {
+    display: none !important;
+}
+
+@media screen and (max-width: 300px) {
+    .account-icon{
+        display: block !important;
+    }
+    .account-head{
+        display: none !important;
+    }
+    .list-inline-item {
+        margin-right: 0.2rem !important;
+    }
+    .navbar {
+        padding: 0.5rem 0.2rem;
+    }
+    .account-btn {
+        padding-top: 10px;
+        padding-bottom: 14px;
+    }
+    .dropdown-item {
+        padding: 0.1rem;
+        white-space: normal;
+    }
+    .dropdown-menu {
+        min-width: auto;
     }
 }

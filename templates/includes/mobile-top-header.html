@@ -10,7 +10,7 @@
                 <div class="input-group w-100">
                     <input class="form-control border border-white rounded-0" type="text" name="q" placeholder="SEARCH">
                     <div class="input-group-append">
-                        <button class="form-control form-control btn border border-white rounded-0" type="submit">
+                        <button class="form-control form-control btn-white btn border rounded-0" type="submit">
                             <span class="icon">
                                 <i class="fas fa-search"></i>
                             </span>
@@ -28,7 +28,7 @@
                     <p class="my-0 account-head">ACCOUNT</p>
                 </div>
             </a>
-            <div class="dropdown-menu border-0 p-2 my-0" aria-labelledby="user-options">
+            <div class="dropdown-menu account-dropdown border-0 p-2 my-0" aria-labelledby="user-options">
                 {% if request.user.is_superuser %}
                     <a href="" class="dropdown-item">PRODUCT MANAGEMENT</a>
                 {% endif %}

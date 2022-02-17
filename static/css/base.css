@@ -77,6 +77,16 @@ body {
     border: 1px solid black !important;
 }
 
+#topnav {
+    background-color: rgb(0,9,11,0.125)!important;
+}
+
+#product-nav{
+    background-color: rgb(0,9,11,1)!important;
+    max-width: 3840px;
+    height: 164px;
+}
+
 .account-dropdown {
     position: absolute;
     transform: translate3d(0px, 6px, 0px);
@@ -122,6 +132,20 @@ body {
 }
 .dropdown-item {
     padding: 0.125rem 0.5rem;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
+.h-60 {
+    height: 60%!important;
 }
 
 /* -------------------------------- Media Queries */

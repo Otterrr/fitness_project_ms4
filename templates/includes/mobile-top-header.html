@@ -5,7 +5,7 @@
                 <div><i class="fas fa-search fa-lg"></i></div>
             </div>
         </a>
-        <div class="dropdown-menu search-menu border-0 w-100 p-3 my-0" aria-labelledby="mobile-search">
+        <div class="dropdown-menu search-menu rounded-0 border-0 w-100 p-3 my-0" aria-labelledby="mobile-search">
             <form class="form" method="GET" action="">
                 <div class="input-group w-100">
                     <input class="form-control border border-white rounded-0" type="text" name="q" placeholder="SEARCH">
@@ -28,7 +28,7 @@
                     <p class="my-0 account-head">ACCOUNT</p>
                 </div>
             </a>
-            <div class="dropdown-menu account-dropdown border-0 p-2 my-0" aria-labelledby="user-options">
+            <div class="dropdown-menu account-dropdown border-0 p-1 my-0" aria-labelledby="user-options">
                 {% if request.user.is_superuser %}
                     <a href="" class="dropdown-item">PRODUCT MANAGEMENT</a>
                 {% endif %}
@@ -50,13 +50,19 @@
         </a>
     </li>
         {% else %}
-    <li class="list-inline-item">
-        <a class=" text-white border border-white rounded-0 nav-link d-lg-none" href="{% url 'account_signup' %}">REGISTER</a>
-            <div class="text-center"></div>
+    <li class="list-inline-item dropdown rounded-0">
+        <a class="text-white account-btn nav-link border border-white rounded-0 d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="text-center">
+                <div><i class="fas fa-user fa-lg account-icon"></i></div>
+                <p class="my-0 account-head">ACCOUNT</p>
+            </div>
         </a>
+        <div class="dropdown-menu register-dropdown border-0 p-1 my-0" aria-labelledby="user-options">
+            <a class="dropdown-item" href="{% url 'account_signup' %}">REGISTER</a>
+            <a class="dropdown-item" href="{% url 'account_login' %}">LOGIN</a>
+        </div>
     </li>
     <li class="list-inline-item">
-        <a class=" text-white border border-white rounded-0 nav-link ml-1 d-lg-none" href="{% url 'account_login' %}">LOGIN</a>
-    </li>
+         </li>
         {% endif %}
 </ul>

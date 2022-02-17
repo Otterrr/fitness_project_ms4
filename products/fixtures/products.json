@@ -1,0 +1,226 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp001",
+        "name": "1",
+        "description": "placeholder1",
+        "price": 55,
+        "category": 1,
+        "rating": 4.6,
+        "image_url":  " ",
+        "image": " "
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp002",
+        "name": "2",
+        "description": "placeholder2",
+        "price": 60,
+        "category": 1,
+        "rating": 4.6,
+        "image_url":  " ",
+        "image": " "
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp003",
+        "name": "3",
+        "description": "placeholder3",
+        "price": 25,
+        "category": 1,
+        "rating": 4.7,
+        "image_url":  " ",
+        "image": " "
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp004",
+        "name": "4",
+        "description": "placeholder4",
+        "price": 70,
+        "category": 1,
+        "rating": 3,
+        "image_url":  " ",
+        "image": " "
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp005",
+        "name": "5",
+        "description": "placeholder5",
+        "price": 15,
+        "category": 2,
+        "rating": 5,
+        "image_url":  " ",
+        "image": " "
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp006",
+        "name": "6",
+        "description": "placeholder6",
+        "price": 15,
+        "category": 2,
+        "rating": 4.7,
+        "image_url":  " ",
+        "image": " "
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp007",
+        "name": "7",
+        "description": "placeholder7",
+        "price": 15,
+        "category": 2,
+        "rating": 4.4,
+        "image_url":  " ",
+        "image": " "
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp008",
+        "name": "8",
+        "description": "placeholder8",
+        "price": 15,
+        "category": 2,
+        "rating": 4.5,
+        "image_url":  " ",
+        "image": " "
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp009",
+        "name": "9",
+        "description": "placeholder9",
+        "price": 20,
+        "category": 3,
+        "rating": 4.7,
+        "image_url":  " ",
+        "image": " "
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp010",
+        "name": "10",
+        "description": "placeholder10",
+        "price": 20,
+        "category": 3,
+        "rating": 4.4,
+        "image_url":  " ",
+        "image": " "
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp011",
+        "name": "11",
+        "description": "placeholder11",
+        "price": 20,
+        "category": 3,
+        "rating": 3,
+        "image_url":  " ",
+        "image": " "
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp012",
+        "name": "12",
+        "description": "placeholder12",
+        "price": 20,
+        "category": 3,
+        "rating": 4.6,
+        "image_url": " ",
+        "image": " "
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp013",
+        "name": "13",
+        "description": "placeholder13",
+        "price": 20,
+        "category": 4,
+        "rating": 3.2,
+        "image_url":  " ",
+        "image":  " "
+      }
+    },
+    {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp014",
+        "name": "14",
+        "description": "placeholder14",
+        "price": 26.99,
+        "category": 4,
+        "rating": 4.7,
+        "image_url":  " ",
+        "image":  " "
+      }
+    },
+    {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp015",
+        "name": "15",
+        "description": "placeholder15",
+        "price": 35.99,
+        "category": 4,
+        "rating": 4.8,
+        "image_url":  " ",
+        "image": " "
+      }
+    },
+    {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp016",
+        "name": "16",
+        "description": "placeholder16",
+        "price": 24.99,
+        "category": 4,
+        "rating": 4.4,
+        "image_url":  " ",
+        "image": " "
+      }
+    }
+  ]

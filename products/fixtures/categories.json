@@ -1,0 +1,34 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "equipment",
+        "friendly_name": "Equipment"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "tops",
+        "friendly_name": "Tops"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "bottoms",
+        "friendly_name": "Bottoms"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "accessories",
+        "friendly_name": "Accessories"
+      }
+    }
+]

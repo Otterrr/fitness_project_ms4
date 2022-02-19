@@ -12,14 +12,6 @@ body {
 
 /* Headings and menus */
 
-.message-container {
-    height: 35vh;
-}
-
-.header-container {
-    padding-top: 164px;
-}
-
 .custom-toggler.navbar-toggler {
     border-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
@@ -77,14 +69,18 @@ body {
     border: 1px solid black !important;
 }
 
+.header-container {
+    padding-top: 158px;
+}
+
 #topnav {
-    background-color: rgb(0,9,11,0.125)!important;
+    background-color: rgb(0,9,11,0.125);
 }
 
 #product-nav{
     background-color: rgb(0,9,11,1)!important;
     max-width: 3840px;
-    height: 164px;
+    height: 158px;
 }
 
 .account-dropdown {
@@ -134,6 +130,13 @@ body {
     padding: 0.125rem 0.5rem;
 }
 
+.dropdown-menu {
+    box-shadow: 0 0 10px 1px black;
+}
+
+.black-drop {
+    background: black;
+}
 .overlay {
     height: 100%;
     width: 100%;
@@ -142,10 +145,6 @@ body {
     position: fixed;
     background: white;
     z-index: -1;
-}
-
-.h-60 {
-    height: 60%!important;
 }
 
 /* -------------------------------- Media Queries */
@@ -180,7 +179,7 @@ body {
         padding-top: 94px;
     }
     #product-nav {
-        height: 0;
+        height: 94px;
     }
 }
 

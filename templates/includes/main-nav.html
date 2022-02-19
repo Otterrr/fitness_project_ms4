@@ -11,11 +11,11 @@
                 Gear
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">EQUIPMENT</a>
-                <a href="" class="dropdown-item">TOPS</a>
-                <a href="" class="dropdown-item">BOTTOMS</a>
-                <a href="" class="dropdown-item">ACCESSORIES</a>
-                <a href="{% url 'products' %}" class="dropdown-item">ALL PRODUCTS</a>
+                <a href="{% url 'products' %}?category=equipment" class="dropdown-item">EQUIPMENT</a>
+                <a href="{% url 'products' %}?category=tops" class="dropdown-item">TOPS</a>
+                <a href="{% url 'products' %}?category=bottoms" class="dropdown-item">BOTTOMS</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">ACCESSORIES</a>
+                <a href="{% url 'products' %}?category=equipment,tops,bottoms,accessories" class="dropdown-item">ALL GEAR</a>
             </div>
         </li>
 

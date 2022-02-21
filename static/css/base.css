@@ -10,6 +10,10 @@ body {
     font-family: 'Maven Pro', sans-serif;
 }
 
+.container-fluid {
+    min-height: 4rem;
+}
+
 /* Headings and menus */
 
 .custom-toggler.navbar-toggler {
@@ -150,6 +154,26 @@ body {
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-button-detail {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    left: 1rem;
+}
+
+.btt-link, .btt-back {
+    cursor: pointer;
+    z-index: 1000;
 }
 
 /* -------------------------------- Media Queries */

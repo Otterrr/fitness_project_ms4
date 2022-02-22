@@ -45,7 +45,7 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
+.shop-now-button, .join-now-button {
     background: rgb(255, 255, 255);
     min-width: 260px;
 }
@@ -55,9 +55,18 @@ body {
     color: white;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    border: 1px solid black;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
+.join-now-button:hover,
+.join-now-button:active,
+.join-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {

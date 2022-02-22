@@ -185,7 +185,10 @@ a.category-badge > span.badge:hover {
     left: 1rem;
 }
 
-.btt-link, .btt-back {
+.btt-link,
+.btt-back,
+.update-link,
+.remove-item {
     cursor: pointer;
     z-index: 1000;
 }

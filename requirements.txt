@@ -7,10 +7,12 @@ dbus-python==1.2.16
 defusedxml==0.7.1
 Django==3.2
 django-allauth==0.41.0
+django-crispy-forms==1.14.0
 dulwich==0.19.15
 fastimport==0.9.8
 idna==2.8
 oauthlib==3.2.0
+Pillow==9.0.1
 PyGObject==3.36.0
 python-apt==2.0.0+ubuntu0.20.4.6
 python3-openid==3.2.0

@@ -27,22 +27,23 @@ var style = {
 var card = elements.create('card', {style: style});
 card.mount('#card-element');
 
+// Handle realtime validation errors on the card element
 card.addEventListener('change', function (event) {
     var errorDiv = document.getElementById('card-errors');
     if (event.error) {
         var html = `
-        <span class="icon" role="alert">
-            <i class="fas fa-times"></i>
+            <span class="icon" role="alert">
+                <i class="fas fa-times"></i>
             </span>
             <span>${event.error.message}</span>
-        `
+        `;
         $(errorDiv).html(html);
-    }   else {
+    } else {
         errorDiv.textContent = '';
     }
 });
 
-// Handle Form Submit
+// Handle form submit
 var form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function(ev) {
@@ -55,7 +56,6 @@ form.addEventListener('submit', function(ev) {
         }
     }).then(function(result) {
         if (result.error) {
-            // Show error to customer
             var errorDiv = document.getElementById('card-errors');
             var html = `
                 <span class="icon" role="alert">

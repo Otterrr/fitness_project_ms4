@@ -7,7 +7,7 @@ dbus-python==1.2.16
 defusedxml==0.7.1
 Django==3.2
 django-allauth==0.41.0
-django-countries==7.3
+django-countries==7.2.1
 django-crispy-forms==1.14.0
 dulwich==0.19.15
 fastimport==0.9.8

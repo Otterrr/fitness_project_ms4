@@ -44,9 +44,9 @@
                 </a>
             </div>
             <div class="col-12 col-lg-4 w-100 my-auto py-3 py-lg-0">
-                <form method="GET" action="{% url 'products' %}">
+                <form method="GET" action="{% url 'products' %}?category=equipment,tops,bottoms,accessories">
                     <div class="input-group w-100">
-                        <input class="form-control" type="text" name="q" placeholder="SEARCH">
+                        <input class="rounded-0 form-control" type="text" name="q" placeholder="SEARCH">
                         <div class="input-group-append">
                             <button class="form-control border-0 rounded-0" type="submit">
                                 <span class="icon">
@@ -70,7 +70,7 @@
                                 {% if request.user.is_superuser %}
                                     <a href="" class="dropdown-item">PRODUCT MANAGEMENT</a>
                                 {% endif %}
-                                    <a href="" class="dropdown-item">PROFILE</a>
+                                    <a href="{% url 'profile' %}" class="dropdown-item">PROFILE</a>
                                     <a href="{% url 'account_logout' %}" class="dropdown-item">LOGOUT</a>
                             </div>                          
                     </li>

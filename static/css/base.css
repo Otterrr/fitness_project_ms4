@@ -8,6 +8,7 @@ body {
     height: 100vh;
     color: #555;
     font-family: 'Maven Pro', sans-serif;
+    overflow-x: hidden;
 }
 
 .container-fluid {
@@ -91,6 +92,7 @@ body {
 
 #topnav {
     background-color: rgb(0,9,11,0.125);
+    z-index: 9999 !important;
 }
 
 #product-nav{
@@ -151,7 +153,7 @@ body {
 }
 
 .black-drop {
-    background: black;
+    background: black !important;
 }
 
 .white-drop {
@@ -167,6 +169,7 @@ body {
     background: white;
     z-index: -1;
 }
+
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
@@ -195,6 +198,26 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
     z-index: 1000;
 }
+
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
+
+/* top--spacer */
+
+#top-spacer {
+    height: 164px;
+}
+
+@media (max-width: 991px) {
+    #top-spacer {
+      height: 96px;
+    }
+  }
+
+
+/* toasts */
 
 .message-container {
     position: fixed;

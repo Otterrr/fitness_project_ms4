@@ -1,3 +1,9 @@
+@media (max-width: 991px) {
+    .navbar, .search-menu, #delivery-banner {
+        background-color: black;
+    }
+}
+
 .StripeElement,
 .stripe-style-input {
     box-sizing: border-box;

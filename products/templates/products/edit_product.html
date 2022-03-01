@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid fixed-top" id="product-nav">
+    <div class="container header-container black-drop">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>
+<div class="row" id="top-spacer"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <hr>
+                <h2 class="logo-font mb-4">Product Management</h2>
+                <h5 class="logo-font text-muted">Edit a Product</h5>
+                <hr>
+            </div>
+        </div>
+        <div class="logo-font row">
+            <div class="col-12 col-md-6">
+                <form method="POST" action="{% url 'edit_product' product.id %}" class="logo-font form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="text-right">
+                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0">Cancel</a>
+                        <button class="logo-font btn btn-black rounded-0" type="submit">Update Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

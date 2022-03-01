@@ -68,7 +68,7 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="user-options">
                                 {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">PRODUCT MANAGEMENT</a>
+                                    <a href="{% url 'add_product' %}" class="dropdown-item">PRODUCT MANAGEMENT</a>
                                 {% endif %}
                                     <a href="{% url 'profile' %}" class="dropdown-item">PROFILE</a>
                                     <a href="{% url 'account_logout' %}" class="dropdown-item">LOGOUT</a>

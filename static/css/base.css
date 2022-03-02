@@ -180,8 +180,8 @@ a.category-badge > span.badge:hover {
     height: 42px;
     width: 42px;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 1rem;
+    right: 2rem;
 }
 
 .btt-button-detail {
@@ -407,34 +407,60 @@ input[name='q']::placeholder {
     #product-nav {
         height: 94px;
     }
-}
-
-@media (max-width: 454px) {
-    #delivery-banner {
-        display: none;
+    .account-icon {
+        display: none !important;
     }
 }
 
-.account-icon {
-    display: none !important;
-}
 
-@media screen and (max-width: 300px) {
+@media (max-width: 454px) {
     .account-icon{
         display: block !important;
+        margin: 0.4rem 0;
     }
     .account-head{
         display: none !important;
     }
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+    .navbar ul {
+        margin-right: 1rem;
+    }
+    .nav-link {
+        padding: 0.4rem 0.8rem;
+    }
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+    .navbar-toggler {
+        padding: .4rem .6rem;
+        font-size: 1rem;
+    }
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
     .list-inline-item {
         margin-right: 0.2rem !important;
     }
     .navbar {
         padding: 0.5rem 0.2rem;
-    }
-    .account-btn {
-        padding-top: 10px;
-        padding-bottom: 14px;
     }
     .dropdown-item {
         padding: 0.1rem;

@@ -1,8 +1,5 @@
 asgiref==3.5.0
-breezy==3.0.2
-certifi==2019.11.28
 chardet==3.0.4
-configobj==5.0.6
 defusedxml==0.7.1
 distlib==0.3.4
 dj-database-url==0.5.0
@@ -10,8 +7,6 @@ Django==3.2
 django-allauth==0.41.0
 django-countries==7.2.1
 django-crispy-forms==1.14.0
-dulwich==0.19.15
-fastimport==0.9.8
 filelock==3.6.0
 gunicorn==20.1.0
 idna==2.8
@@ -23,11 +18,8 @@ py==1.11.0
 pycairo==1.20.1
 python3-openid==3.2.0
 pytz==2021.3
-PyYAML==5.3.1
 requests==2.22.0
 requests-oauthlib==1.3.1
-requests-unixsocket==0.2.0
-six==1.14.0
 sqlparse==0.4.2
 stripe==2.66.0
 urllib3==1.25.8

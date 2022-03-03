@@ -1,11 +1,11 @@
 # BETTER YOU
 
+
 Welcome to my Full Stack Frameworks with Django Milestone Project.
 
+As a Fitness enthusiast and regular "gym-goer", being able to create my own fitness website, with the potential of becoming a real website that I could adapt on and develop in the future into a real training and e-commerce website was a no-brainer!
 
-
-
-
+I chose to have a small products page where users could purchase the most necessary of items. From a beginners weights kit, with increasing weight sizes for the more experienced, as well as a small selection of clothing items for both men & women.
 
 
 ## Table Of Contents
@@ -37,70 +37,112 @@ Welcome to my Full Stack Frameworks with Django Milestone Project.
 
 ## Project Goals
 
-
+The Primary goal of BetterYou was as an e-commerce site, to sell products relating to the brand. (Although, as this is not a real website OR brand, I do not have any real products that are branded as Better You). Users would come to the site as a fan of Better You and want to buy the merchendise. If they wanted to become a "Better Them" they could also therefore look at the classes available to join.
 
 #### User Goals
 
-
+* A place to buy products under the Better You brand.
+* A place where users can enquire about classes to become a Better Them.
+* A simple, intuative, e-commerce process, where buying, selecting, adding to bag & checking out and recieving their order are easy.
+* To be able to log in and out to decide if I want to be a recognised customer.
+* To have a profile where I can save my information for future checkouts.
+* A place to view my previous orders.
 
 #### Developer Goals
 
-
+* To be able to sell my products!
+* To be able to help other become Better individuals (improve their fitness).
+* To create a library of users & orders.
+* To be able to easily create, update, view and delete my products and classes available.
 
 ## User Stories
 
 #### As a User, I want:
 
-1. 
+1. I want to be able to visit this site and to be able to easily navigate to the products page or classes page, depending on what I am after.
+2. I want to be able to easily navigate around the site on my computer and my phone.
+3. I want to be able to add products to my bag, continue shopping if I wish, or checkout if I am finished.
+4. I want to be notified of my basket when I add new products to it, so I can be reminded of what I have placed in it, as well as the total amount.
+5. I want to be able to save my billing information, so I do not need to add it everytime I checkout.
 
 #### As a Developer, I want:
 
-1. 
+1. A user-friendly e-commerce site where users will want to come back to purchase more products or sign up to my classes.
+2. I want an easy way to add more products / classes as my library increases in size.
+3. I want to be able to view my users that have signed up to the website as well as what they have purchased.
+4. I want a place to store my library of images and static files.
 
 ## Design Choices
 
+* The design choice for this website was taken from Boutique Ado. I am a fan of black & white monochromatic design styles, so this was perfect for me.
 
+* I however wanted to try a transparent background with no header or nav bar visible at the top of the page. I was able to create this to show a full page background image with a 50% tranparent nav-bar so the text was still visible.
 
 #### Fonts
 
-
+* I found a strong uppercase font that I liked and used it throughout the site, capitalising everything where possible.
 
 #### Icons
 
-
+* Icons were taken from Font Awesome. Used for drop-downs, form & buttons.
 
 #### Colours 
 
-
+* No colours were technically used apart from to customise toasts, alerts and messages. The rest of the site was black & white.
 
 #### Styling
 
-
+* Full page background - with transparent nav-bar elements.
+* Black nav-bar when not on main page, with white overlays.
 
 #### Background, Images & Audio
 
-
+* Two background images were used. One for Desktop and one for mobile. This was users would get the feel of a more expansive website depending on whether they were viewing on Desktop or Mobile.
+* Other images were used for products or class images. I tried to chose the most object focused images as possible with as little of the model, but found it hard to find clothing images without a person wearing them.
 
 ## Wireframes
 
 My wireframes were created using [Balsamiq](https://balsamiq.com/).
 
 
-![]()
+![Main Page](media/better_you.png)
 
+Full page background with essentially floating nav items and a dropdown left menu for mobile view. Large buttons on the home page to draw the users to click on Shop Now or Join Here.
 
-![]()
+![Products Page](media/product_page.png)
 
+Simple large images of products. Name of product, price, rating below.
 
-![]()
+![Classes Page](media/classes.png)
 
+Same layout as products except always one item on a row. Simple large images of classes. Name of class with price. On the class_details page there would be a description of what the class involved and a place for users to email to enquire.
 
+![Checkout page](media/checkout.png)
+
+Simple layout of the items in the users bag, and sizes applicable, price of each product as well as the total amount. Users saved information from their profile or blank fields for the user to input to. An option for users to save these details and to register to become a user.
 
 # Features 
 
 ## Main Features
 
-* 
+* HOME PAGE - The landing page. Would feature a single large image taking up 100% of the height and width of the page. Further down the page would be a large button for users to visit the shop.
+
+* Nav bar - There would be the search bar, nav items, login logout & account options and the total bag value. There would be a slightly different view for admins to be able to view product management to add/delete edit products or classes.
+
+* Products page - This page would hold the products of the site. It would have 2-4 products per row depending on the size of the screen, with 1 per row for mobile. Each of the products would have the name, rating and price of the product.
+
+* Classes page - Similar to the products page, this page would have 1 class per row, vertically styled with a heading on each page. Clicking on each class would take users to the class_details page where there would a detailed description of each class, the price as well as how to sign up.
+
+* Login, Logout, Register pages - Simple form for users to either add their existing username and password or for users to sign up with username, email and password.
+
+* Bag page - A place where users can view their bag and the items they have gathered there. The bag would show each item, with image, sizes, price as well as the quantity of each item added. They would be able to update the bag by either increasing, decreasing or deleting the item.
+
+* Checkout page - Checkout page like the wireframe above would be similar to the bag where it would show users the items in their bag. They would not be able to adjust the bag, as they would need to do this in the bag page, but they would be able to see the details of each item, quantity, individual price as well as total bag amount. They would also have a form to input their billing details as a new user and card details. If they were a registered user then hopefully they will have pre-filled information.
+
+* Checkout success page - This would confirm to the user that the order has been sent through. It would have another copy of the users bag, with an order confirmation number as well as a message that this order had been sent to their attached email. There will also be a button to guide users to continue browsing the site.
+
+* Product Management - Add /Delete /Edit products. This is where an admin would be able to view the details of each product and be able to update it for price changes, sales or to add new products.
+
 
 # Technologies Used
 
@@ -123,16 +165,44 @@ My wireframes were created using [Balsamiq](https://balsamiq.com/).
 
 ### As a User, I want:
 
-1. 
+1. I want to be able to visit this site and to be able to easily navigate to the products page or classes page, depending on what I am after.
 
-*
+* Simple layout. Large buttons to the next / previous pages.
+
+2. I want to be able to easily navigate around the site on my computer and my phone.
+
+* Mobile friendly view that either simplifies the organisation of the page or shrinks the fonts/images to accomodate.
+
+3. I want to be able to add products to my bag, continue shopping if I wish, or checkout if I am finished.
+
+* Under each product there is an add to bag button or a back to shopping button. When users add an item to the bag it will keep them on this page where they can then continue shopping.
+
+4. I want to be notified of my basket when I add new products to it, so I can be reminded of what I have placed in it, as well as the total amount.
+
+* A toast will pop up in the top right to inform users that a product has been added to their bag. They can then either dismiss it, or click to view their bag.
+
+5. I want to be able to save my billing information, so I do not need to add it everytime I checkout.
+
+* When users checkout they can tick a box to save their billing information. This will prompt them to a register page if they are not already registered just update their current details.
 
 
-### As a Developer, I want:
+#### As a Developer, I want:
 
-1. 
+1. A user-friendly e-commerce site where users will want to come back to purchase more products or sign up to my classes.
 
-* 
+* Simple layout. Large buttons to the next / previous pages. Mobile friendly view that either simplifies the organisation of the page or shrinks the fonts/images to accomodate. Quality products.
+
+2. I want an easy way to add more products / classes as my library increases in size.
+
+* Each product in the admin view will have an edit / delete button where products can be updated. Admins can also navigate to product management where they can add new products.
+
+3. I want to be able to view my users that have signed up to the website as well as what they have purchased.
+
+* In /admin, the admin can view the user profiles as well as their previous orders.
+
+4. I want a place to store my library of images and static files.
+
+* AWS stores all of the images and static files. When a new upadte is pushed it will save the static files then any images need to be uploaded their to be stored.
 
 
 
@@ -144,16 +214,46 @@ My wireframes were created using [Balsamiq](https://balsamiq.com/).
 
 ### POST-CONTRUCTION TESTING
 
-1.
+* The lighthouse testing was mostly 100% aside from some controversial color issues that were ignored and adding a meta description.
 
+* I thought that there was a major problem with my images not being loaded by AWS to Heroku, but my CSS was. Turns out I just did not upload my home page background image to AWS. Simple Fix.
+
+* I struggled for a short while as to why my recently created classes model was not appearing on the deployed Heroku page but they HTML was. I was getting a 500 error. I turned on development mode to take a look. A kind tutor informed me that I needed to migrate the models to Heroku as well as my local repository.
+
+* I had created my Fitness Classes in the Admin on my local repo, but was informed by the tutor that without fixtures they would not be visible on my Heroku app. So I had to manually add them again to the admin panel on Heroku. I also uploaded their images to AWS.
+
+* Just before commiting my final deployment I tried to fix some PEP8 issues with lines being too long. In trying to fix this issue, I accidentally cut on of my links in half causing a templating error to occur, blocking access to my add_products page. I retraced my steps and found the cut code and re-stitched it together.
 
 
 # Deployments
 
 ## Heroku
 
+## Heroku
+
 This project was deployed to Heroku through the following steps:
 
+1. Create a "requirements.txt" file using the terminal command "pip freeze > requirements.txt".
+
+2. Create a "Profile" with the terminal command "echo web: pythong app.py > Procfile".
+
+3. git "add" and "git commit" the requiremnts.txt and Procfile, then "git push" to GitHub.
+
+4. Create a new app on the [Heroku](https://www.heroku.com/) website by clicking "New" button in your dashboard. Give it a name and set the region to Europe.
+
+5. From the Heroku dashboard of the new app, click on "Deploy" > "Deployment method" and select Github.
+
+6. Confirm the linking of the Heroku app to the correct GitHub repository.
+
+7. In the Heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+
+8. Remove DEVELOPMENT = True and DISABLE_COLLECTSTATIC = 1.
+
+9. In the Heroku dashboard, click "Deploy".
+
+10. In the "Manual Deployment" section of this page, make sure the main branch is selected and then click "Deploy Branch".
+
+11. The site is now successfully deployed.
 
 
 
@@ -200,7 +300,7 @@ Various functions and code snippets were adapted upon from the mini-project as w
 
 # Content
 
-* fonts
+* I used google font Maven+Pro for my entire site. I used a capitalised version as I like the strong look it gave.
 
 # Media
 
@@ -237,3 +337,4 @@ Various functions and code snippets were adapted upon from the mini-project as w
 * [Slack](https://slack.com/intl/en-gb/)
 * [W3Schools](https://www.w3schools.com/)
 * [Stack Overflow](https://stackoverflow.com/).
+* [Wikipedia](https://en.wikipedia.org/wiki/Main_Page) - used for some product & classes descriptions.

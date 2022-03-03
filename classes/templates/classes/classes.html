@@ -52,10 +52,10 @@
                             <hr>
                         </div>
                     {% endfor %}
-                    <div class="col text-center mt-3">
-                        <hr class="col-12 mb-1">
-                    </div>
                 </div>
+            </div>
+            <div class="col text-center mt-3">
+                <hr class="col-12 mb-1">
             </div>
         </div>
     </div>
@@ -68,7 +68,7 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript">
+    <script>
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0)
 		})

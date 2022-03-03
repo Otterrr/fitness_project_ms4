@@ -118,20 +118,21 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'better_you.wsgi.application'
 
 
+DATABASE_URL = "postgres://abeaptoipiklfn:269d3bf3be996128c024efe2b31fe5ecb924bb71a800a8e7825cc92854bdde7e@ec2-52-215-225-178.eu-west-1.compute.amazonaws.com:5432/d8uc2blp659n56"
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+# if 'DATABASE_URL' in os.environ:
+#     DATABASES = {
+#         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+#     }
+# else:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#        }
+#    }
 
 
 # Password validation

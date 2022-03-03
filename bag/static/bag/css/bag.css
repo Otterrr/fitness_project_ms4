@@ -1,3 +1,6 @@
+
+/* To make the nav-bar black instead of transparent on mobile views */
+
 @media (max-width: 991px) {
     .navbar, .search-menu, #delivery-banner {
         background-color: black;

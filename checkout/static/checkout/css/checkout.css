@@ -1,8 +1,13 @@
+
+/* To make the nav-bar black instead of transparent on mobile views */
+
 @media (max-width: 991px) {
     .navbar, .search-menu, #delivery-banner {
         background-color: black;
     }
 }
+
+/* Stripe */
 
 .StripeElement,
 .stripe-style-input {
@@ -50,6 +55,8 @@ select:invalid,
 select option[value=""] {
     color: #aab7c4 !important;
 }
+
+/* Loading Overlay */
 
 .loading-overlay {
 	display: none;

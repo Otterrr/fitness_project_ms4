@@ -193,7 +193,7 @@ $ git clone https://github.com/Otterrr/fitness_project_ms4.git
  
 # Credits
 
-* [Code Institute](https://learn.codeinstitute.net/courses) - specifically The Mini Project task_manager.
+* [Code Institute](https://learn.codeinstitute.net/courses) - specifically The Boutique Ado ecommerce project.
 * [BOOTSTRAP](https://getbootstrap.com/)
 
 Various functions and code snippets were adapted upon from the mini-project as well as bootstrap. All code where appropriate was typed by hand and functions and variables were renamed for my own project.
@@ -204,8 +204,29 @@ Various functions and code snippets were adapted upon from the mini-project as w
 
 # Media
 
-* Product images were sourced from Pexels.[Pexels](https://www.pexels.com/)
-* Icons were sourced from Font Awesome.[Font Awesome](https://fontawesome.com)
+* Product images were sourced from [Pexels](https://www.pexels.com/) & [Unsplash](https://unsplash.com/).
+
+        1.PEXELS.COM - 
+        Scott Webb - Woman Pushing Barbel Using Her Feet 
+            Woman Hanging on Gym Equipment on Focus Photo
+        Pixabay - Green, Blue, and Pink Kettle Bells on Blue Surface
+            Woman Holding Exercise Equipment
+        Karolina Grabowska - All cast dumbbell placed on marble table
+            Set of fitness equipment placed on marble surface
+        Victor Freitas - Several Rogue Gym Plates
+        Eduardo Cano Photo - Black Barbell on the Ground
+        Dom J - Black Skip Rope
+        Keiji Yoshiki - Man in Black Tank Top Holding Brown Stretching Rope
+        Cesar Galeao - Man Holding Dumbbell
+        Andres Ayrton - Asian man working out with gym equipment
+
+        UNSPLASH - 
+        Tyler Nix
+        Jonathan Borba
+        Total Shape
+        Alonso Reyes
+
+* Icons were sourced from [Font Awesome](https://fontawesome.com)
 
 # Acknowledgements
 

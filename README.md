@@ -208,8 +208,40 @@ Simple layout of the items in the users bag, and sizes applicable, price of each
 
 ### ON THE GO TESTING / PROBLEMS
 
-1. 
+1. General
+* Following along with the Boutique_Ado project I found few problems apart from typos and mis-indented code. These were generally simple fixes and just required be to carefully scan over my code or to go back in a video to see what I may have added incorrectly.
 
+2. Nav Bar
+* I like nav-bars and I like playing around with them, customising them. This time I decided to have only text for larger screens and only icons for smaller screens. This took some figuring out how to hide the text on small screens and replace with the icon for smaller, but I managed to have it so when the screen size got small enough they would swap and the hideen icon would appear and the text would hide.
+
+3. CONTAINERS
+* I had an issue where my content was sticking to the top of the page and being initally hidden behind my nav-bar. To fix this I added a 164px container (96px on mobile) above all my content on each page to push down my content to below the nav-bar.
+
+4. HTML/CSS
+* I like straight sharp shapes. I chose to remove as many curves as possible and to have all my boxes rounded-0 and my fonts capitalised. This was simple enough to apply througout the entire site once I had found the style I liked. I chose to apply a thin border around my elements with a small amount of padding and kept them in line with my black and white theme.
+
+5. TRANSPARENCY 
+* The largest recurring problem I had during this project was having a transparent background on one page and a solid one on the other. I wanted to have a transparent nav-bar on each page, but it was not possible due to the scrolling required from the product and classes pages. This meant I have to have my nav bar be black on product pages but transparent on the main page. I was able to do this by adding a black container that would sit at the top of each page above the content but below the nav bar itself. I made sure it was the same height as the nav-bar, smaller on the mobile screens and 100% width. 
+* The next problem came when expanding the nav bar, as the black background was a fixed height. I overcame this problem by applying a black background to the dropdown nav elements only in mobile view (where the nav drop down was visible) and on their seperate css pages for each page, so as not to apply it the home page.
+
+6. PRODUCTS
+* As I do not already own an e-commerce store I did not have access to a large library of products and had to find appropriate images online. This meant that they were all sorts of sizes and shapes. I managed to oranise them as best as possible to have two portrait images next to each other and any landscape images next to each other to allow for a more uniformed products page. 
+
+7. MEDIA QUERIES
+* The hardest media query for me to satisfy was the smallest phone. Making sure the nav-bar fit in. To do I have to reduce the margins and padding on the nav-bar elements, reduce the icon font sizes and for one element, change it from text to icon as the word was quite long. I also had to adjust the dropdown menu to be more to the left as it was cutting off the page. To do this I adjusted its position(x,y,z)when it dropped down to be move over to the center of the page.
+
+8. BILLING INFORMATION
+* I wanted the billing information to save the users name as well so I added the name field to the billing form and had it saved to the users profile. To do this I also had to add a space in the users profile for full_name and linked up the two using crispy_forms.
+
+
+9. checkout_wh/
+* As my first time Stripe, I struggled to use the webhooks functionality... Especially as the boutique guide was outdated and the stripe admin page had changed since. They had decided to remove the webhook testing button, meaning the only way to test was to submit a checkout order. Simple enough, just more time consuming. The main problem came when I came back a day later to try again and my webhooks were now failing. I had changed no code and they were fine when I left. After a discussion with some fellow students on slack, it became apparent that when you reload the gitpod repo it changes its web address meaning it breaks the webhooks and a new secret key must be assigned each time you re-load gitpod. Once I realised the problem it was fine, time consuming to add a new code each day but fine. It of course fixed itself upon deploying to Heroku and has not failed since.
+
+10. The mysterious deps.txt
+* Upon deploying the Heroku, I was having perculiar trouble with a couple of requiremnts not working together and causing errors upon deployment. A tutor from CI said that he did not recognise the requiremnts as those that should be in my project. I was advised to delete the culprits, commit and try to deploy again. This worked, but the tutor found a good 8 or so items in the requirements.txt file that should not have been there. Later on, my github told me that these files were causing security issues with my project. I took the advice from dependenciesbot and upated some of them to more secure versions. Stil unsure how these files got into my project as they were added with my "initial commit".
+
+11. django_countries
+* Just my luck. I followed the guide and added django_countries to my requirements.txt and commited the changes, only to come across and error that I did not know how to fix. Neither did the tutor I was assigned. It turned out that django_countries had just put out an update only 18hrs ago, which of course had a bug that was conflicting with django. The tutor informed me of the best previous version of django_countries to go back to and it worked fine from there!
 
 
 ### POST-CONTRUCTION TESTING
@@ -226,8 +258,6 @@ Simple layout of the items in the users bag, and sizes applicable, price of each
 
 
 # Deployments
-
-## Heroku
 
 ## Heroku
 

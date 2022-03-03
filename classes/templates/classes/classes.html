@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
+{% block page_header %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid fixed-top" id="product-nav">
+        <div class="container header-container black-drop">
+            <div class="row">
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="row" id="top-spacer"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">Classes</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="classes-container col-12">
+                <div class="row">
+                    {% for classes in classes %}
+                        <div class="col-8 offset-2">
+                            <div class="card h-100 border-0">
+                                <div class="card-body pb-0">
+                                    <div class="col text-center mt-3">
+                                        <h4 class="mb-2 logo-font">{{ classes.name }}</h4>
+                                    </div>
+                                </div>
+                                {% if classes.image %}
+                                <a href="{% url 'classes_detail' classes.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ classes.image.url }}" alt="{{ classes.name }}">
+                                </a>
+                                {% else %}
+                                <a href="{% url 'classes_detail' classes.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ classes.name }}">
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="col-10 offset-1 my-2">
+                            <hr>
+                        </div>
+                    {% endfor %}
+                    <div class="col text-center mt-3">
+                        <hr class="col-12 mb-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btt-button shadow-sm rounded-0 border border-black">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>	
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+		$('.btt-link').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	</script>
+    
+    <script type="text/javascript">
+        $('#sort-selector').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
+
+            var selectedVal = selector.val();
+            if(selectedVal != "reset"){
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
+
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                window.location.replace(currentUrl);
+            }
+        })
+    </script>
+{% endblock %}
